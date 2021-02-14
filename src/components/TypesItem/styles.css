@@ -1,0 +1,18 @@
+.typeSection{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.typeSection .typeItem{
+    height: 20px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    background: #1abc9c;
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+}

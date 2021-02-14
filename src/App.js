@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Routers from './router/index.js'
+import ThemeContext , {themes} from './context/themeContext'
+import Theme from './components/Theme'
+import { useState } from 'react';
+import { SWITCH_DARK, SWITCH_LIGHT } from './const';
 function App() {
+  const [theme,setTheme]=useState(themes.dark)
+  const toggleTheme=()=>{
+
+    theme===themes.dark?setTheme(themes.light):setTheme(themes.dark)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+        <Header/>
+        <Theme  theme={theme} themeText={theme===themes.dark?SWITCH_LIGHT:SWITCH_DARK} onClick={()=>{
+          toggleTheme()
+        }} />
+        <div className="appContainer" style={theme}>
+        <Routers />
+        </div>
+        <Footer/>
+      </div>
   );
 }
 

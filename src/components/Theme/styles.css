@@ -1,0 +1,14 @@
+.themeContainer{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 40px;
+    font-family: 'Potta One', cursive;
+    color: #e56c84;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}

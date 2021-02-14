@@ -1,0 +1,17 @@
+.catchedPokeListContainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+}
+.nocatchPokeTitle{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Potta One', cursive;
+    color: #1abc9c;
+}

@@ -1,0 +1,98 @@
+.goBack{
+    font-family: 'Potta One', cursive;
+    color:#5e6c84;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 30px;
+    text-decoration: underline;
+}
+
+.catchedPokeContainer{
+    margin-bottom: 20px;;
+    cursor: auto;
+    position: relative;
+    display: flex;
+    height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: .3s;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 20px;
+    border:1px solid #d8dce3;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+.catchedPokeList{
+    flex: 1;
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+.idSection{
+    display: flex;
+    align-items: center;
+    font-family: 'Potta One', cursive;
+    color:#1abc9c;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.imageSection img {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.nameSection{
+    display: flex;
+    align-items: center;
+    font-family: 'Potta One', cursive;
+    color:#1abc9c;
+    font-size: 14px;
+    text-transform: capitalize;
+    width: max-content;
+}
+.typesSection{
+    display: flex;
+    flex:1;
+    align-items: center;
+    justify-content: flex-end;
+}
+.catchedPokeTypeItem{
+    height: 40px;
+    font-family: 'Potta One', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#1abc9c;
+    width: max-content;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.catchedPokeTypeItem + .catchedPokeTypeItem{
+    margin-left: 8px;
+}
+.actionSection{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'Potta One', cursive;
+    font-size: 10px;
+    width: max-content;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-left: 16px;
+}
+.actionSectionDelete{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 10px;
+    font-family: 'Potta One', cursive;
+    text-transform: capitalize;
+}
